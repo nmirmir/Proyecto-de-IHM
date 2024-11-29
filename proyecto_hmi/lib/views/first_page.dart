@@ -19,7 +19,13 @@ class FirstPage extends StatelessWidget {
   Widget build(BuildContext context){
     return Scaffold(
     appBar: AppBar(
-      title: const Text('First Practice')),
+      title: const Text('Login', style: TextStyle( fontFamily: 'Roboto',  
+      fontSize: 24,  
+      fontWeight: 
+      FontWeight.bold, 
+      color: Colors.black,),
+        )
+      ),
     floatingActionButton: const FloatingActionButton(
       onPressed: null,
       child:  Icon(Icons.icecream_outlined),
