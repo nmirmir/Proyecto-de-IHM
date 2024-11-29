@@ -28,7 +28,10 @@ class FirstPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Image.asset(
-            'assets/img/logo.png',
+            '../../assets/img/image.png',
+            width: 80,
+            height: 80,
+            alignment: Alignment.topCenter,
           ),
             GestureDetector(
               child: Container(width: 20, height: 40, color: Colors.red),
