@@ -39,14 +39,30 @@ class FirstPage extends StatelessWidget {
     margin: const EdgeInsets.symmetric(horizontal: 20),
     child: Align(
       alignment: Alignment.topLeft, // Place text at the top-left corner
-      child: Text(
+      child: Padding( 
+        padding: const EdgeInsets.only(top: 10.0, left: 20.0), // Ajusta los márgenes según tus necesidades
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+      children:[Text(
         'LOGIN', // Replace with your desired text
-        style: TextStyle(
-          fontSize: 48, // Adjust font size
-          color: Colors.black, // Adjust text color
-          fontWeight: FontWeight.bold, // Optional: make text bold
-          
-        ),
+        style: TextStyle( fontFamily: 'Roboto', fontSize: 56, 
+        fontWeight: FontWeight.bold, color: Colors.black),
+      ),Text(
+        'Usuario:', // Replace with your desired text
+        style: TextStyle( fontFamily: 'Roboto', fontSize:48 , 
+        fontWeight: FontWeight.bold, color: Colors.black),
+      ),
+      SizedBox(height: 20), TextField( decoration: InputDecoration( labelText: 'Usuario', border: OutlineInputBorder(), ), ),
+      Text(
+        'Contraseña:', // Replace with your desired text
+        style: TextStyle( fontFamily: 'Roboto', fontSize:48 , 
+        fontWeight: FontWeight.bold, color: Colors.black),
+      ),
+      SizedBox(height: 20), 
+      TextField( decoration: InputDecoration( labelText: 'Contraseña', border: OutlineInputBorder(), ),obscureText: true, ),
+    
+      ] 
+      ),
       ),
     ),
   ),
