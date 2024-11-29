@@ -18,51 +18,44 @@ class FirstPage extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return Scaffold(
-    appBar: AppBar(
-      title: const Text('Login', style: TextStyle( fontFamily: 'Roboto',  
-      fontSize: 24,  
-      fontWeight: 
-      FontWeight.bold, 
-      color: Colors.black,),
-        )
-      ),
-    floatingActionButton: const FloatingActionButton(
-      onPressed: null,
-      child:  Icon(Icons.icecream_outlined),
-    ),
-    body: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    body: Stack(
             children: [
               Image.asset(
-            '../../assets/img/image.png',
-            width: 80,
-            height: 80,
+            '../../assets/img/logo.png',
+            width: 120,
+            height: 120,
             alignment: Alignment.topCenter,
           ),
-            GestureDetector(
-              child: Container(width: 20, height: 40, color: Colors.red),
-              onTap: () {
-                dev.log('OnTap');
-                print("seee");
-              },
-            ),
-            const Spacer(flex: 2),
-            GestureDetector(
-              onDoubleTap: () {
-                _goToSecondPage(context);
-              },
-              child: Container(width: 40, height: 40, color: Colors.blue),
-            ),
-            const Spacer(flex: 1),
-            GestureDetector(
-              child: Container(width: 60, height: 40, color: Colors.yellow),
-              onLongPress: () {
-                dev.log('OnLongPress');
-              },
-            ),
+          Center(
+  child: Container(
+    width: 700,
+    height: 600,
+    decoration: BoxDecoration(
+      color: Colors.blue,
+      borderRadius: BorderRadius.circular(10),
+      border: Border.all(color: Colors.black),
+    ),
+    alignment: Alignment.center, // Align the content within the container
+    margin: const EdgeInsets.symmetric(horizontal: 20),
+    child: Align(
+      alignment: Alignment.topLeft, // Place text at the top-left corner
+      child: Text(
+        'LOGIN', // Replace with your desired text
+        style: TextStyle(
+          fontSize: 48, // Adjust font size
+          color: Colors.black, // Adjust text color
+          fontWeight: FontWeight.bold, // Optional: make text bold
+          
+        ),
+      ),
+    ),
+  ),
+),
+
+            
+            
           ],
           ),
-    
     );
   }
   
