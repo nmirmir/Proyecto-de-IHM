@@ -14,6 +14,5 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(title: 'Practice 1',home: FirstPage(),);
   }
-  
 }
 

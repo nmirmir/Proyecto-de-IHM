@@ -19,7 +19,9 @@ class FirstPage extends StatelessWidget {
   Widget build(BuildContext context){
     return Scaffold(
     appBar: AppBar(
-      title: const Text('First Practice')),
+      title: Text('Mi App con Logo'),
+      
+    ),
     floatingActionButton: const FloatingActionButton(
       onPressed: null,
       child:  Icon(Icons.icecream_outlined),
@@ -27,11 +29,12 @@ class FirstPage extends StatelessWidget {
     body: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
+              Image.asset('/Proyecto-de-IHM/proyecto_hmi/lib/assets/logo.png'),
             GestureDetector(
               child: Container(width: 20, height: 40, color: Colors.red),
               onTap: () {
                 dev.log('OnTap');
-                print("seee");
+                
               },
             ),
             const Spacer(flex: 2),
