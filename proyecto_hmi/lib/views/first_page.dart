@@ -46,21 +46,29 @@ class FirstPage extends StatelessWidget {
       children:[Text(
         'LOGIN', // Replace with your desired text
         style: TextStyle( fontFamily: 'Roboto', fontSize: 56, 
-        fontWeight: FontWeight.bold, color: Colors.black),
-      ),Text(
+        fontWeight: FontWeight.bold, color: Colors.white),
+      ),
+      SizedBox(height: 50), 
+      Text(
         'Usuario:', // Replace with your desired text
         style: TextStyle( fontFamily: 'Roboto', fontSize:48 , 
-        fontWeight: FontWeight.bold, color: Colors.black),
+        fontWeight: FontWeight.bold, color: Colors.white),
       ),
-      SizedBox(height: 20), TextField( decoration: InputDecoration( labelText: 'Usuario', border: OutlineInputBorder(), ), ),
+      SizedBox(height: 20), 
+      TextField( decoration: InputDecoration( labelText: 'Usuario', border: OutlineInputBorder(),fillColor: Colors.white,filled:true ),),
+      SizedBox(height: 30), 
+      
       Text(
         'Contraseña:', // Replace with your desired text
         style: TextStyle( fontFamily: 'Roboto', fontSize:48 , 
-        fontWeight: FontWeight.bold, color: Colors.black),
+        fontWeight: FontWeight.bold, color: Colors.white),
       ),
       SizedBox(height: 20), 
-      TextField( decoration: InputDecoration( labelText: 'Contraseña', border: OutlineInputBorder(), ),obscureText: true, ),
-    
+      TextField( decoration: InputDecoration( labelText: 'Contraseña', border: OutlineInputBorder(),fillColor: Colors.white,filled:true ),obscureText: true, ),
+    SizedBox(height: 30),  
+    ElevatedButton( onPressed: () {}, 
+    child: Text('Aceptar'),
+    ),
       ] 
       ),
       ),
