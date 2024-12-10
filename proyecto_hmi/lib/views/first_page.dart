@@ -57,6 +57,9 @@ class FirstPage extends StatelessWidget {
       SizedBox(height: 20), 
       TextField( decoration: InputDecoration( labelText: 'Usuario', border: OutlineInputBorder(),fillColor: Colors.white,filled:true ),),
       SizedBox(height: 30), 
+
+
+      
       
       Text(
         'Contraseña:', // Replace with your desired text
